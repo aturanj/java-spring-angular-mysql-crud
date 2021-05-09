@@ -32,12 +32,8 @@ public class EmployeeService {
         return employeeRepository.save(employee);
     }
 
-    public void deleteEmployee(Employee employee) {
-        employeeRepository.delete(employee);
-    }
-
     public void deleteEmployeeByID(Long employeeId) {
-        employeeRepository.deleteEmployeeByID(employeeId);
+        employeeRepository.deleteEmployeeById(employeeId);
     }
 
     public Employee findEmployeeById(Long employeeId) {
